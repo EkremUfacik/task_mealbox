@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 28px;
+}
+
+ul,
+li {
+    list-style: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.nav-item.active .nav-accord-item:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-item.active .nav-accord-item {
+        display: block !important;
+    }
+
+    .nav-item a {
+        border-bottom: 1px solid rgb(219, 219, 219);
+    }
+}
+
+
+.content {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    left: -20rem;
+    padding-top: 18px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .nav-el:hover .content {
+        display: block;
+    }
+
+    .nav-el:hover::after {
+        content: "";
+        position: fixed;
+        z-index: 9;
+        top: 135px;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-el:hover .content {
+        display: none;
+    }
+}
+
+.back-top {
+    visibility: hidden;
+}
+
+
+.carousel-item img {
+    /* object-fit: contain; */
+    /* aspect-ratio: 2/1; */
+}
+
+.form-control {
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.swiper {
+    max-width: 1000px;
+    cursor: grab;
+}
+
+.accordion-button:not(.collapsed) {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    background-color: white;
+}
+
+.accordion-button:not(.collapsed):focus {
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
