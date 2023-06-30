@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <header class="sticky-top bg-white">
         <div class="container-fluid d-flex justify-content-between align-items-center py-2 bg-light">
             <div class="d-flex gap-4 ">
@@ -230,15 +231,76 @@
 
         <div id="carouselExampleInterval" class="carousel slide col-12 col-lg-8 p-0" data-bs-ride="carousel">
             <div class="carousel-inner ">
-                <div class="carousel-item active " data-bs-interval="10000">
-                    <img src="https://www.eatingwell.com/thmb/zvHrm_Z8F2qLeJenpJ6lYodtq7M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/57831531-73819d8ce8f5413cac42cf1c907bc37a.jpg"
-                        height="600px" class="w-100" alt="...">
+                <div class="carousel-item active"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0)), url(assets/slider-1.jpg);"
+                    data-bs-interval="10000">
+                    <div class=" text-white d-flex justify-content-center flex-column px-5 h-100 w-75">
+                        <h2 class="fw-semibold">İş yerinizdeki her türlü
+                            kurumsal yemek ihtiyacınız için
+                            çözüm Meal Box'ta...</h2>
+                        <p class="fs-6">Taşıma yemek, paket yemek, yerinde yemek üretimi
+                            hizmetlerimizle, şef yemeklerini iş yerinize getiriyoruz.</p>
+                        <div>
+                            <a href="#sunumlar-1">
+                                <button class="btn btn-light text-secondary px-4 py-2 me-3 mb-3"> Menüleri
+                                    İncele</button>
+                            </a>
+                            <a href="#referanslar">
+                                <button class="btn btn-danger text-white px-4 py-2 me-3 mb-3">Referanslarımız</button>
+                            </a>
+
+                            <a href="#neden-meal">
+                                <button class="btn btn-light text-secondary px-4 py-2 mb-3">Neden Meal Box</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/meal1.png" height="600px" class=" w-100" alt="...">
+                <div class="carousel-item"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0)), url(assets/slider-2.jpg);"
+                    data-bs-interval="2000">
+                    <div class=" text-white d-flex justify-content-center flex-column px-5 h-100 w-75">
+                        <h2 class="fw-semibold">İş yerinizdeki her türlü
+                            kurumsal yemek ihtiyacınız için
+                            çözüm Meal Box'ta...</h2>
+                        <p class="fs-6">Taşıma yemek, paket yemek, yerinde yemek üretimi
+                            hizmetlerimizle, şef yemeklerini iş yerinize getiriyoruz.</p>
+                        <div>
+                            <a href="#sunumlar-1">
+                                <button class="btn btn-light text-secondary px-4 py-2 me-3 mb-3"> Menüleri
+                                    İncele</button>
+                            </a>
+                            <a href="#referanslar">
+                                <button class="btn btn-danger text-white px-4 py-2 me-3 mb-3">Referanslarımız</button>
+                            </a>
+
+                            <a href="#neden-meal">
+                                <button class="btn btn-light text-secondary px-4 py-2 mb-3">Neden Meal Box</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/meal2.png" height="600px" class="w-100" alt="...">
+                <div class="carousel-item"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0)), url(assets/slider-3.jpg);">
+                    <div class=" text-white d-flex justify-content-center flex-column px-5 h-100 w-75">
+                        <h2 class="fw-semibold">İş yerinizdeki her türlü
+                            kurumsal yemek ihtiyacınız için
+                            çözüm Meal Box'ta...</h2>
+                        <p class="fs-6">Taşıma yemek, paket yemek, yerinde yemek üretimi
+                            hizmetlerimizle, şef yemeklerini iş yerinize getiriyoruz.</p>
+                        <div>
+                            <a href="#sunumlar-1">
+                                <button class="btn btn-light text-secondary px-4 py-2 me-3 mb-3"> Menüleri
+                                    İncele</button>
+                            </a>
+                            <a href="#referanslar">
+                                <button class="btn btn-danger text-white px-4 py-2 me-3 mb-3">Referanslarımız</button>
+                            </a>
+
+                            <a href="#neden-meal">
+                                <button class="btn btn-light text-secondary px-4 py-2 mb-3">Neden Meal Box</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -558,7 +620,7 @@
         </div>
     </section>
 
-    <section class="sunumlar-1 my-5 text-center">
+    <section id="sunumlar-1" class="my-5 text-center">
         <h4 class="fw-semibold">Örnek Sunumlar</h4>
         <p class="fs-6 text-secondary fw-medium">Paketli Sıcak Yemek Servisi</p>
 
@@ -601,7 +663,7 @@
 
         </div>
     </section>
-    <section class="sunumlar-2 my-5 text-center">
+    <section id="sunumlar-2" class="my-5 text-center">
         <h4 class="fw-semibold">Örnek Sunumlar</h4>
         <p class="fs-6 text-secondary fw-medium">Taşıma Yemek Hizmeti / Ofis Restoranı Sunumu</p>
         <div class="swiper mySwiper user-select-none px-4 mx-4 mx-xl-auto my-4" style="max-width: 1200px;">
@@ -654,7 +716,7 @@
 
     </section>
 
-    <section class="container flex-column flex-lg-row row mx-auto">
+    <section id="neden-meal" class="container flex-column flex-lg-row row mx-auto">
         <div class="col-12 col-lg-6">
             <h3>Neden Meal Box?</h3>
             <p class="fw-medium fs-6 text-secondary">Herkese uygun beslenme çözümlerimiz, lezzetli ve sağlıklı
@@ -759,7 +821,7 @@
         </div>
     </section>
 
-    <section class="referanslar my-5 text-center">
+    <section id="referanslar" class="my-5 text-center">
         <h3 class="fw-semibold">Referanslarımız</h3>
         <div id="swiper2" class="swiper user-select-none px-4 mx-4 mx-xl-auto my-5" style="max-width: 1300px;">
             <div class="swiper-wrapper text-center">
@@ -816,7 +878,7 @@
         </div>
     </section>
 
-    <section class="mutfak-teslimat">
+    <section id="mutfak-teslimat">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 text-center text-xl-start mt-5">
@@ -846,7 +908,7 @@
         </div>
     </section>
 
-    <section class="customer-comments text-center my-5">
+    <section id="customer-comments" class="text-center my-5">
         <h3 class="fw-semibold">Müşterilerimizin Görüşleri</h2>
 
             <p class="fs-6 col-6 mx-auto text-black-50 fw-medium">Meal Box Kurumsal Sıcak Yemek Servisi sistemi,

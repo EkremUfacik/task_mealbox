@@ -84,6 +84,18 @@ body {
     visibility: hidden;
 }
 
+.carousel-item {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    padding-left: 4rem;
+}
+
+
+
 
 .carousel-item img {
     /* object-fit: contain; */
